@@ -1,0 +1,17 @@
+de\magicccrafter\npclib\utils\PacketReader$1.class
+de\magicccrafter\npclib\utils\PacketReader$2$1.class
+de\magicccrafter\npclib\command\MagicnpcCommand.class
+de\magicccrafter\npclib\utils\MagicNPC.class
+de\magicccrafter\npclib\utils\MagicNPCManager.class
+de\magicccrafter\npclib\utils\SkinFetcher.class
+de\magicccrafter\npclib\listener\JoinListener.class
+de\magicccrafter\npclib\listener\QuitListener.class
+de\magicccrafter\npclib\event\NPCListener.class
+de\magicccrafter\npclib\utils\PacketManager.class
+de\magicccrafter\npclib\MagicNPCLibrary.class
+de\magicccrafter\npclib\utils\PacketReader$2.class
+de\magicccrafter\npclib\event\MagicNPCLeftClickEvent.class
+de\magicccrafter\npclib\api\MagicNPCAPI.class
+de\magicccrafter\npclib\utils\MagicNPC$1.class
+de\magicccrafter\npclib\utils\PacketReader.class
+de\magicccrafter\npclib\event\MagicNPCRightClickEvent.class

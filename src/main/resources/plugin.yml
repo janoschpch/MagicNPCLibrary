@@ -1,0 +1,9 @@
+name: MagicNPCLibrary
+version: 1.0
+api-version: 1.13
+author: Magicccrafter
+
+main: de.magicccrafter.npclib.MagicNPCLibrary
+
+commands:
+  magicnpc:
