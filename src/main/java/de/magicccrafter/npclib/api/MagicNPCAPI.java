@@ -10,20 +10,28 @@ import java.util.UUID;
 
 public class MagicNPCAPI {
 
-    public MagicNPC createNPC(String displayName, String skinName, Location npcLocation) {
+    public MagicNPC createNPC(String displayName, String skinName, Location npcLocation, Boolean save) {
         MagicNPC npc = new MagicNPC(displayName, skinName, npcLocation, UUID.randomUUID());
         npc.spawn();
         MagicNPCLibrary.getInstance().getMagicNPCManager().addNpc(npc);
-        this.saveNPC(npc);
+        if(save) {
+            this.saveNPC(npc);
+        }
         return npc;
     }
 
-    public MagicNPC createNPC(String displayName, String skinName, Location npcLocation, UUID uuid) {
+    public MagicNPC createNPC(String displayName, String skinName, Location npcLocation, Boolean save, UUID uuid) {
         MagicNPC npc = new MagicNPC(displayName, skinName, npcLocation, uuid);
         npc.spawn();
         MagicNPCLibrary.getInstance().getMagicNPCManager().addNpc(npc);
-        this.saveNPC(npc);
+        if(save) {
+            this.saveNPC(npc);
+        }
         return npc;
+    }
+
+    public List<MagicNPC> getNPCs() {
+        return MagicNPCLibrary.getInstance().getMagicNPCAPI().getNPCs();
     }
 
     public void saveNPC(MagicNPC npc) {
@@ -49,7 +57,9 @@ public class MagicNPCAPI {
                 npc2 = npc1;
             }
         }
-        npcs.remove(npc2);
+        if(npc2 != null) {
+            npcs.remove(npc2);
+        }
         MagicNPCLibrary.getInstance().getConfig().set("SavedNPCs", npcs);
         MagicNPCLibrary.getInstance().saveConfig();
     }

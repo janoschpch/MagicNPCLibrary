@@ -26,7 +26,7 @@ public class MagicnpcCommand implements CommandExecutor {
                         String uuid = strings[3];
                         name = name.replace("&", "§");
                         if(isUUID(uuid)) {
-                            MagicNPCLibrary.getInstance().getMagicNPCAPI().createNPC(name, skin, player.getLocation(), UUID.fromString(uuid));
+                            MagicNPCLibrary.getInstance().getMagicNPCAPI().createNPC(name, skin, player.getLocation(), true, UUID.fromString(uuid));
                             player.sendMessage(MagicNPCLibrary.getInstance().getPrefix() + "§eDu hast einen NPC mit dem Namen §7[" + name + "§7] §eerstellt und mit dem Skin §7[§c" + skin + "§7] §eund mit der UUID §7[§4" + uuid + "§7]");
                             return true;
                         }
@@ -39,7 +39,7 @@ public class MagicnpcCommand implements CommandExecutor {
                         String name = strings[1];
                         String skin = strings[2];
                         name = name.replace("&", "§");
-                        MagicNPCLibrary.getInstance().getMagicNPCAPI().createNPC(name, skin, player.getLocation());
+                        MagicNPCLibrary.getInstance().getMagicNPCAPI().createNPC(name, skin, player.getLocation(), true);
                         player.sendMessage(MagicNPCLibrary.getInstance().getPrefix() + "§eDu hast einen NPC mit dem Namen §7[" + name + "§7] §eerstellt und mit dem Skin §7[§c" + skin + "§7]");
                         return true;
                     }
