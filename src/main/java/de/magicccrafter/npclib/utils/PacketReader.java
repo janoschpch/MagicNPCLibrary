@@ -49,6 +49,7 @@ public class PacketReader {
             Integer id = (Integer) getPacketValue(packet, "a");
 
             MagicNPC npc = MagicNPCLibrary.getInstance().getMagicNPCManager().getNpcByEntityId(id);
+            if(npc.getName() == null) return;
 
             Bukkit.getScheduler().runTask(MagicNPCLibrary.getInstance(), new Runnable() {
                 @Override
