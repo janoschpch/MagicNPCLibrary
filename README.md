@@ -68,3 +68,7 @@ public class APIExample implements Listener {
 
 }
 ```
+## Pictures
+
+![npc1](https://user-images.githubusercontent.com/67484571/113927964-740dbc80-97ee-11eb-9f53-5bc1fef3b180.png)
+
