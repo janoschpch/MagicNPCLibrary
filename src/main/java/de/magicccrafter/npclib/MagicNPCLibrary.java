@@ -2,7 +2,6 @@ package de.magicccrafter.npclib;
 
 import de.magicccrafter.npclib.api.MagicNPCAPI;
 import de.magicccrafter.npclib.command.MagicnpcCommand;
-import de.magicccrafter.npclib.event.NPCListener;
 import de.magicccrafter.npclib.listener.JoinListener;
 import de.magicccrafter.npclib.listener.QuitListener;
 import de.magicccrafter.npclib.utils.MagicNPC;
@@ -39,7 +38,6 @@ public class MagicNPCLibrary extends JavaPlugin implements CommandExecutor {
         PluginManager pluginManager = Bukkit.getPluginManager();
         pluginManager.registerEvents(new JoinListener(), this);
         pluginManager.registerEvents(new QuitListener(), this);
-        pluginManager.registerEvents(new NPCListener(), this);
 
         getCommand("magicnpc").setExecutor(new MagicnpcCommand());
 
