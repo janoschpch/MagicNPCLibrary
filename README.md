@@ -2,6 +2,8 @@
  
 This is a NPC Library for spigot or paper 1.15.2. You easy can create NPCs with a command and save it. Also the plugin adds two Bukkit events.
 
+**Temporary Test Server** dev.magiccrafter.de
+
 ## Current Features
 
 - Create NPCs with a Command
